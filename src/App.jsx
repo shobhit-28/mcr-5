@@ -2,7 +2,7 @@ function App() {
 
   return (
     <div className="App">
-      MCR 5
+      MCR 5 
     </div>
   )
 }
