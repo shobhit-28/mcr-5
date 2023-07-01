@@ -1,0 +1,44 @@
+.home-page .add-recipe {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+}
+
+.home-page .add-recipe:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.home-page .modal-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page .modal-container .modal {
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 8px;
+    background-color: #fff;
+    border-radius: 0.45rem;
+    width: 18rem;
+    max-height: 35rem;
+    overflow: auto;
+}
