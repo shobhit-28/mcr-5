@@ -16,7 +16,7 @@ export const DetailsPage = () => {
       <button className="back" onClick={() => navigate('/')}>Back</button>
       <div className="head">{recipe.recipeName}</div>
       <div className="img-container">
-        <img src={recipe?.image} alt="" />
+        <img src={recipe?.image ? recipe?.image : 'https://picsum.photos/1080/1920'} alt="" />
       </div>
       <div className="content">
         <p className="cuisine">{`Cuisine: ${recipe.country}`}</p>

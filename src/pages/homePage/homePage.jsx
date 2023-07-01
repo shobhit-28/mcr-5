@@ -57,6 +57,28 @@ export const HomePage = () => {
         setIsModalOpen(false)
     }
 
+    console.log(newRecipeData.ingredients)
+
+    const addRecipeHandler = () => {
+        if (newRecipeData.recipeName !== '') {
+            if (newRecipeData.country !== '') {
+                if (newRecipeData.ingredients.length !== 0) {
+                    if (newRecipeData.instructions.length !== 0) {
+                        addRecipe(newRecipeData)
+                    } else {
+                        alert('Instructions field is necessary')
+                    }
+                } else {
+                    alert('You have to fill the ingredients')
+                }
+            } else {
+                alert('Cuisine field is necessary')
+            }
+        } else {
+            alert('Name is necessary')
+        }
+    }
+
     return (
         <div className='home-page'>
             <Header />
@@ -101,7 +123,7 @@ export const HomePage = () => {
                             />
                         </div>
                         <div className="btn-container">
-                            <button className="save" onClick={() => addRecipe(newRecipeData)}>Save</button>
+                            <button className="save" onClick={() => addRecipeHandler()}>Save</button>
                             <button className="save" onClick={() => closeModal()}>Cancel</button>
                         </div>
                     </div>
