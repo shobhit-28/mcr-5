@@ -77,6 +77,7 @@ export const HomePage = () => {
         } else {
             alert('Name is necessary')
         }
+        closeModal()
     }
 
     return (
