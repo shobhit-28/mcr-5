@@ -42,3 +42,9 @@
     max-height: 35rem;
     overflow: auto;
 }
+
+.home-page .recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+

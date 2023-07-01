@@ -1,3 +1,7 @@
 .details-page .img-container {
     width: 18rem;
 }
+
+.details-page p {
+    margin: 1rem;
+}

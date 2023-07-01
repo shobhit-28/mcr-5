@@ -1,3 +1,5 @@
 .recipe-card {
     width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+    margin: 1rem;
 }

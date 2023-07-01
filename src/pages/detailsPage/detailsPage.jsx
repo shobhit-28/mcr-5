@@ -21,6 +21,7 @@ export const DetailsPage = () => {
       <div className="content">
         <p className="cuisine">{`Cuisine: ${recipe.country}`}</p>
         <p className="ingredients">{`Ingredients: ${recipe.ingredients.join(', ')}`}</p>
+        <p>Instructions</p>
         {recipe.instructions.map((ins, index) => (
           <p className="instruction" key={index}>{`${index+1}. ${ins} \n`}</p>
         ))}
