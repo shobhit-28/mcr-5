@@ -65,6 +65,7 @@ export const HomePage = () => {
                 if (newRecipeData.ingredients.length !== 0) {
                     if (newRecipeData.instructions.length !== 0) {
                         addRecipe(newRecipeData)
+                        closeModal()
                     } else {
                         alert('Instructions field is necessary')
                     }
@@ -77,7 +78,6 @@ export const HomePage = () => {
         } else {
             alert('Name is necessary')
         }
-        closeModal()
     }
 
     return (
